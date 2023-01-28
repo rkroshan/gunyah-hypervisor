@@ -20,7 +20,11 @@ cd <desired-installation-path>
 ./<path-to-script>/llvm_musl_build.sh
 ```
 
-> Note, this script requires cmake to be installed.
+> Note, this script requires cmake, gcc, g++, ninja-build, gcc-aarch-linux-gnu to be installed.
+> On Ubuntu 20.04
+```bash
+sudo apt install -y cmake g++ ninja-build gcc-aarch64-linux-gnu
+```
 
 This script will generate a `llvm-musl-install` folder in the current directory.
 
